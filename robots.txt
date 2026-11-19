@@ -1,0 +1,3 @@
+# Concept site: keep out of search engines until approved by Open Hand of Fredericksburg
+User-agent: *
+Disallow: /
