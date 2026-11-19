@@ -4,6 +4,12 @@ A free website concept prepared for [Open Hand of Fredericksburg](https://www.in
 
 > **This is a proposal, not Open Hand's official website.** Search engines are blocked (`robots.txt` and `noindex`), and online giving and forms are intentionally switched off until Open Hand approves the site.
 
+## Content and brand sources
+
+- Text: Open Hand's previous website (2022–2023, via the Internet Archive), its IRS Form 990 filings, and its Idealist profile.
+- Logo: Open Hand's own logo, from its public Idealist profile (500×500 PNG). Replace with original artwork from Open Hand if available.
+- Colors: taken from the logo's turquoise (`#00ADB9`).
+
 ## How it's built
 
 Plain HTML and CSS served by GitHub Pages. No frameworks, no build service.
