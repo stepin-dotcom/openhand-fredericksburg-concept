@@ -101,15 +101,15 @@ p { margin: 0 0 1.1em; }
 
 /* Hero */
 .hero { position: relative; overflow: hidden; background: linear-gradient(135deg, var(--teal-dark), var(--teal) 60%, #138694); color: #fff; }
-.hero .container { display: grid; grid-template-columns: 1.15fr .85fr; gap: 3rem; align-items: center; padding: 5rem 0 5.5rem; }
+.hero .container { padding: 5rem 0 5.5rem; }
+.hero .container > div { max-width: 46rem; }
 .hero h1 { color: #fff; }
 .hero .eyebrow { color: var(--gold); }
 .hero p.lead { font-size: 1.25rem; color: #e6f3f4; max-width: 34em; }
 .hero-art { position: relative; }
 .hero-art svg { width: 100%; height: auto; }
 @media (max-width: 860px) {
-  .hero .container { grid-template-columns: 1fr; padding: 3.5rem 0 4rem; gap: 2rem; }
-  .hero-art { max-width: 320px; margin: 0 auto; }
+  .hero .container { padding: 3.5rem 0 4rem; }
 }
 
 .page-hero { background: var(--navy); color: #fff; padding: 4rem 0 3.5rem; position: relative; overflow: hidden; }

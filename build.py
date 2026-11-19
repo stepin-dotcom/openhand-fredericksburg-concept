@@ -10,7 +10,6 @@ import pathlib, re
 
 ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
-LOGO = (SRC / "partials" / "logo.svg").read_text().strip()
 HEAD = (SRC / "partials" / "head.html").read_text()
 HEADER = (SRC / "partials" / "header.html").read_text()
 FOOTER = (SRC / "partials" / "footer.html").read_text()
@@ -35,6 +34,6 @@ for page in sorted((SRC / "pages").glob("*.html")):
     html = (HEAD.replace("{{title}}", full_title).replace("{{description}}", desc)
             + HEADER.replace("{{nav}}", nav_html(page.name))
             + body
-            + FOOTER).replace("{{logo}}", LOGO)
+            + FOOTER)
     (ROOT / page.name).write_text(html)
     print("built", page.name)
