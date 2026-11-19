@@ -22,7 +22,7 @@ def nav_html(current):
     for href, label in NAV:
         cur = ' aria-current="page"' if href == current else ""
         items.append(f'<li><a href="{href}"{cur}>{label}</a></li>')
-    items.append('<li><a class="btn btn-gold" href="donate.html">Donate</a></li>')
+    items.append('<li><a class="btn btn-primary" href="donate.html">Donate</a></li>')
     return "\n          ".join(items)
 
 for page in sorted((SRC / "pages").glob("*.html")):
